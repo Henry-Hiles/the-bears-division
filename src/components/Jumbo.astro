@@ -1,0 +1,18 @@
+---
+import styles from "../styles/Jumbo.module.css"
+import Divider from "./Divider.astro"
+---
+
+<header>
+	<section id={styles.jumbo}>
+		<img
+			id={styles.logoLong}
+			src="/images/logoLong.svg"
+			alt="The Bear's Division"
+		/>
+		<Divider />
+		<span id={styles.shortAbout}>
+			“I am what is mine. Personality is the original personal property.”
+		</span>
+	</section>
+</header>

@@ -1,0 +1,51 @@
+.nav {
+	position: sticky;
+	display: flex;
+	gap: 1rem;
+	overflow: auto;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: bold;
+	background: hsl(0 0% 0% / 0.4);
+	font-size: 1.4rem;
+	top: 0;
+	z-index: 1;
+	padding: 1rem;
+}
+
+.nav section {
+	display: flex;
+	align-items: center;
+	gap: 0.75em;
+}
+
+.nav :is(svg, img) {
+	width: 2rem;
+}
+
+.discord {
+	width: 1.5rem;
+}
+
+.nav button:hover {
+	color: var(--primary-text);
+}
+
+.nav a {
+	display: flex;
+	align-items: center;
+	color: inherit;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: var(--primary-text);
+}
+
+@media (max-width: 525px) {
+	.nav {
+		position: unset;
+	}
+}

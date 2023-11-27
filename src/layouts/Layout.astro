@@ -1,0 +1,52 @@
+---
+import "../styles/Layout.css"
+import Top from "../components/Top.astro"
+import Nav from "../components/Nav.astro"
+
+export interface Props {
+	page: string
+	description: string
+}
+
+const { page, description } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/images/logo.svg" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="generator" content={Astro.generator} />
+		<meta content={`The Bear's Division- ${page}`} property="og:title" />
+		<meta content={description} property="og:description" />
+		<meta content="/favicon.ico" property="og:image" />
+		<meta content="#14bc9d" data-react-helmet="true" name="theme-color" />
+		<title>The Bear's Division Gaming - {page}</title>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<slot />
+		</main>
+		<Top />
+	</body>
+</html>

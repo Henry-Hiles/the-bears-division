@@ -1,0 +1,43 @@
+.portfolioItems {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	gap: 30px;
+	margin: auto;
+	max-width: 60rem;
+	flex-wrap: wrap;
+	padding: 2em 3em;
+}
+
+.portfolioItems a {
+	width: 100%;
+	max-width: 12rem;
+	color: white;
+	transition: scale 0.2s;
+}
+
+.portfolioItems a:not(:hover) {
+	filter: brightness(90%);
+}
+
+.portfolioItems a:not(:hover) {
+	text-decoration: none;
+}
+
+.portfolioItems img {
+	width: 100%;
+	border-radius: 1rem;
+	background: var(--secondary);
+	box-shadow: 0.5em 0.5em 3em 0.7em rgba(0, 0, 0, 0.25),
+		-0.5em -0.5em 3em 0.7em rgba(0, 0, 0, 0.22);
+}
+
+.portfolioItems a:hover {
+	scale: 1.1;
+}
+
+.projectName {
+	width: 100%;
+	margin: 0;
+	padding: 5px 0;
+}
