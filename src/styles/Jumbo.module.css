@@ -1,22 +1,21 @@
 #jumbo {
-	color: white;
-	font-size: 2em;
-	text-align: center;
-	padding: 0;
-	padding: 3rem 0 0;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+    padding: 3rem 0 0;
 }
 
 #jumbo i {
-	margin: 20px 0 30px;
+    margin: 20px 0 30px;
 }
 
 #jumbo #logoLong {
-	width: 60rem;
-	width: 100%;
-	max-width: 35rem;
+    width: 60rem;
+    max-width: 35rem;
 }
 
 #jumbo #shortAbout {
-	display: block;
-	padding: 2rem 1rem;
+    display: block;
+    padding: 2rem 1rem;
 }
